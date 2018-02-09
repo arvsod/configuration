@@ -1,0 +1,38 @@
+set nocompatible
+filetype off    
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" plugin on GitHub repo
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'scrooloose/nerdtree'
+
+call vundle#end()            " required
+
+autocmd vimenter * NERDTree
+
+filetype plugin indent on    " required
+
+"t_Co=256
+
+set mouse=a
+
+"Syntax and coloring
+syntax enable
+colorscheme desert
+let g:airline_theme='luna'
+set cursorline
+highlight CursorLine cterm=None ctermbg=235
+
+"Make tab sensible
+set expandtab
+set tabstop=4
+set shiftwidth=4
+
+"New splits sensible
+set splitbelow
+set splitright
