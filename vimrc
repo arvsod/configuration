@@ -6,18 +6,15 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 
-" plugin on GitHub repo
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 
-call vundle#end()            " required
+call vundle#end()
 
 autocmd vimenter * NERDTree
 
-filetype plugin indent on    " required
-
-"t_Co=256
+filetype plugin indent on
 
 set mouse=a
 
