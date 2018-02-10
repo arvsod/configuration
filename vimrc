@@ -33,3 +33,14 @@ set shiftwidth=4
 "New splits sensible
 set splitbelow
 set splitright
+
+"Add margin to the left
+set foldcolumn=1
+
+
+"Turn persistent undo on 
+try
+    set undodir=~/.vim_runtime/temp_dirs/undodir
+    set undofile
+catch
+endtry

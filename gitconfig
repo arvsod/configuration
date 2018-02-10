@@ -3,3 +3,10 @@
 cm = commit -m
 s = status
 pom = push origin master
+d = difftool
+
+[diff]
+tool = vimdiff
+
+[difftool]
+prompt = false
