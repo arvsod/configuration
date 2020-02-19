@@ -1,12 +1,26 @@
+[user]
+	email = arvid.thorheim@actia.se
+	name = Arvid Thorheim
+[color]
+	ui = auto
 [alias]
-
-cm = commit -m
-s = status
-pom = push origin master
-d = difftool
-
+	s = status
+	c = commit
+	cm = commit -m
+	d = difftool
+	l = log develop...
+	cb = checkout -b
+	b = branch -vv
+	sb = status -sb
+	fd = log -G
+	go = checkout
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [diff]
-tool = vimdiff
-
+ 	tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --new-window --diff $LOCAL $REMOTE
 [difftool]
-prompt = false
+	prompt = false
+[core]
+	editor = code --wait
+	excludesfile = /home/arvid/.gitignore_global
