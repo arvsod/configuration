@@ -1,0 +1,43 @@
+{
+    "editor.rulers": [
+        79,
+        120
+    ],
+    "python.linting.pylintPath": "/home/<USER>/.local/bin/pylint",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "editor.renderWhitespace": "none",
+    "vsicons.dontShowNewVersionMessage": true,
+    "jenkins.pipeline.linter.connector.url": "http://jenkins.actia.se/pipeline-model-converter/validate",
+    "jenkins.pipeline.linter.connector.user": "<USER>.<USER>",
+    "jenkins.pipeline.linter.connector.pass": "<password>",
+    "diffEditor.renderSideBySide": false, //run non-lint commands with bundle exec
+    "ruby.useLanguageServer": true, // use the internal language server (see below)
+    "ruby.lint": {
+      "rubocop": {
+        "useBundler": true // enable rubocop via bundler
+      },
+    },
+    "ruby.format": "rubocop",
+    "window.zoomLevel": 0,
+    "cSpell.userWords": [
+      "Pytest",
+      "actia",
+      "hwinfo",
+      "iperf",
+      "memlock",
+      "omping",
+      "strftime",
+      "targettests",
+      "ulimits",
+      "wifi"
+    ],
+    "markdown-preview-enhanced.liveUpdate": true,
+    "python.autoComplete.addBrackets": true,
+    "files.trimTrailingWhitespace": true,
+    "ruby.rubocop.executePath": "/home/<USER>/.rbenv/shims/",
+    "solargraph.commandPath": "/home/<USER>/.rbenv/shims/solargraph",
+    "workbench.sideBar.location": "left",
+    "python.pythonPath": "/usr/bin/python3" // use rubocop for formatting
+}
