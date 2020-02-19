@@ -1,6 +1,6 @@
 [user]
-	email = arvid.thorheim@actia.se
-	name = Arvid Thorheim
+	email = asd
+	name = asd
 [color]
 	ui = auto
 [alias]
@@ -23,4 +23,4 @@
 	prompt = false
 [core]
 	editor = code --wait
-	excludesfile = /home/arvid/.gitignore_global
+	excludesfile = /home/<USER>/.gitignore_global
