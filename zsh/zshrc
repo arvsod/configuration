@@ -108,3 +108,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 export PATH="/home/<USER>/.rbenv/shims/rubocop:$PATH"
 export PATH="/home/<USER>/.rbenv/versions/2.7.0/bin/rubocop:$PATH"
+
+# Remap ctrl left to caps lock
+xmodmap -e "clear lock"
+xmodmap -e "keysym Caps_Lock = Control_L"
+xmodmap -e "add Control = Control_L"
