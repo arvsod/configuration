@@ -1,0 +1,8 @@
+# Put all your private settings in this file. It will be sourced by
+# .bashrc and you can override all/any settings from that file here.
+
+#check if stdin and stdout are both tty
+if [ -t 0 ] && [ -t 1 ]; then
+    PATH=$PATH:~/bin
+    exec $HOME/bin/zsh -l
+fi

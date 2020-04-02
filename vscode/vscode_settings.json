@@ -1,6 +1,6 @@
 {
     "editor.rulers": [
-        79,
+        80,
         120
     ],
     "python.linting.pylintPath": "/home/<USER>/.local/bin/pylint",
