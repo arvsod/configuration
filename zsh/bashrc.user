@@ -2,7 +2,8 @@
 # .bashrc and you can override all/any settings from that file here.
 
 #check if stdin and stdout are both tty
-if [ -t 0 ] && [ -t 1 ]; then
+#check that you are on valid host (fix ssh)
+if [ -t 0 ] && [ -t 1 ] && [ $HOSTNAME = <a_name> ]; then
     PATH=$PATH:~/bin
     exec $HOME/bin/zsh -l
 fi
